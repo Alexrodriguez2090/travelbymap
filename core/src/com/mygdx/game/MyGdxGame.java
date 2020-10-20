@@ -14,10 +14,9 @@ public class MyGdxGame extends ApplicationAdapter {
 	Texture imgCloser;
 	OrthographicCamera cam;
 	int WIDTH, HEIGHT;
-	int imgWidth, imgHeight, imgCenterX, imgCenterY;
+	int imgWidth, imgHeight;
 
 	int imgX, imgY;
-	int imgAngle;
 
 	@Override
 	public void create () {
@@ -25,14 +24,11 @@ public class MyGdxGame extends ApplicationAdapter {
 		img = new Texture("map1.jpg");
 		imgWidth = img.getWidth();
 		imgHeight = img.getHeight();
-		imgCenterX = imgWidth / 2;
-		imgCenterY = imgHeight / 2;
 
 		imgCloser = new Texture("map2.jpg");
 
 		imgX = 0;
 		imgY = 0;
-		imgAngle = 0;
 
 		WIDTH = Gdx.graphics.getWidth();
 		HEIGHT = Gdx.graphics.getHeight();
